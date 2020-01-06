@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00B8B9BE-9ED4-4E01-B9B9-BD4167501C58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_Team_20</RootNamespace>
+    <AssemblyName>Project Team 20</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicUser Folder\BasicUser.cs" />
+    <Compile Include="BasicUser Folder\BasicUser_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicUser Folder\BasicUser_Form.Designer.cs">
+      <DependentUpon>BasicUser_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicUser Folder\BasicUser_Registration_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicUser Folder\BasicUser_Registration_Form.Designer.cs">
+      <DependentUpon>BasicUser_Registration_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course Folder\Course.cs" />
+    <Compile Include="Course Folder\CourseSQL.cs" />
+    <Compile Include="Design\Buttons\iTalk_Button_2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\Buttons\iTalk_Button_2.Designer.cs">
+      <DependentUpon>iTalk_Button_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design\ProgressBar\CircularProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ProgressBar\CircularProgressBar.Designer.cs">
+      <DependentUpon>CircularProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeInterface\EmpInterface.cs" />
+    <Compile Include="HeadOfDepartmentFolder\AddCourse_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\AddCourse_Form.Designer.cs">
+      <DependentUpon>AddCourse_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\AddWorker_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\AddWorker_Form.Designer.cs">
+      <DependentUpon>AddWorker_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\DeleteCourse_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\DeleteCourse_Form.Designer.cs">
+      <DependentUpon>DeleteCourse_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\DeleteWorker_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\DeleteWorker_Form.Designer.cs">
+      <DependentUpon>DeleteWorker_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\DerecognitionOfHours_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\DerecognitionOfHours_Form.Designer.cs">
+      <DependentUpon>DerecognitionOfHours_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\EditCourseDetail_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\EditCourseDetail_Form.Designer.cs">
+      <DependentUpon>EditCourseDetail_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\EditCourse_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\EditCourse_Form.Designer.cs">
+      <DependentUpon>EditCourse_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\ExeptionOfHours_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\ExeptionOfHours_Form.Designer.cs">
+      <DependentUpon>ExeptionOfHours_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\HeadOfDepartment.cs" />
+    <Compile Include="HeadOfDepartmentFolder\HeadOfDepartmentSQL.cs" />
+    <Compile Include="HeadOfDepartmentFolder\HeadOfDepartment_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\HeadOfDepartment_Form.Designer.cs">
+      <DependentUpon>HeadOfDepartment_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\PeopleWithAbnormalHours_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\PeopleWithAbnormalHours_Form.Designer.cs">
+      <DependentUpon>PeopleWithAbnormalHours_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\PrintAllCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\PrintAllCourses.Designer.cs">
+      <DependentUpon>PrintAllCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\PrintAllLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\PrintAllLecturer.Designer.cs">
+      <DependentUpon>PrintAllLecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\PrintAllTeachingAssists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeadOfDepartmentFolder\PrintAllTeachingAssists.Designer.cs">
+      <DependentUpon>PrintAllTeachingAssists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerFolder\AddNewLecturer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerFolder\AddNewLecturer_Form.Designer.cs">
+      <DependentUpon>AddNewLecturer_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerFolder\ChangeOfficeHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerFolder\ChangeOfficeHours.Designer.cs">
+      <DependentUpon>ChangeOfficeHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerFolder\ChooseHoursToWork_Form.cs" />
+    <Compile Include="LecturerFolder\ChooseHoursToWork_Form.Designer.cs">
+      <DependentUpon>ChooseHoursToWork_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerFolder\ChooseOfficeHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerFolder\ChooseOfficeHours.Designer.cs">
+      <DependentUpon>ChooseOfficeHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerFolder\Lecturer.cs" />
+    <Compile Include="LecturerFolder\Lecturer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerFolder\Lecturer_Form.Designer.cs">
+      <DependentUpon>Lecturer_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerFolder\MinTimeBetweenClasses_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerFolder\MinTimeBetweenClasses_Form.Designer.cs">
+      <DependentUpon>MinTimeBetweenClasses_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerFolder\NumOfDays_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerFolder\NumOfDays_Form.Designer.cs">
+      <DependentUpon>NumOfDays_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerFolder\SemestersToTeachLecturer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerFolder\SemestersToTeachLecturer_Form.Designer.cs">
+      <DependentUpon>SemestersToTeachLecturer_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFolder\AbstractFactory.cs" />
+    <Compile Include="LoginFolder\EmployeeFactory.cs" />
+    <Compile Include="LoginFolder\FactoryProducer .cs" />
+    <Compile Include="LoginFolder\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFolder\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFolder\LoginSQL.cs" />
+    <Compile Include="ProjectDataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDataBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleFolder\Schedule.cs" />
+    <Compile Include="ScheduleFolder\ScheduleSQL.cs" />
+    <Compile Include="SecretaryFolder\Assign_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretaryFolder\Assign_Form.Designer.cs">
+      <DependentUpon>Assign_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecretaryFolder\DerecognitionHours_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretaryFolder\DerecognitionHours_Form.Designer.cs">
+      <DependentUpon>DerecognitionHours_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecretaryFolder\ExceptionHours_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretaryFolder\ExceptionHours_Form.Designer.cs">
+      <DependentUpon>ExceptionHours_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecretaryFolder\OpenOrCloseCourse_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretaryFolder\OpenOrCloseCourse_Form.Designer.cs">
+      <DependentUpon>OpenOrCloseCourse_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecretaryFolder\PrintCourseDetails_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretaryFolder\PrintCourseDetails_Form.Designer.cs">
+      <DependentUpon>PrintCourseDetails_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecretaryFolder\PrintSchedule_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretaryFolder\PrintSchedule_Form.Designer.cs">
+      <DependentUpon>PrintSchedule_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecretaryFolder\Secretary.cs" />
+    <Compile Include="SecretaryFolder\Secretary_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecretaryFolder\Secretary_Form.Designer.cs">
+      <DependentUpon>Secretary_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLDataBase\SQLConnection.cs" />
+    <Compile Include="SQLDataBase\TempSQLConnectionTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQLDataBase\TempSQLConnectionTestForm.Designer.cs">
+      <DependentUpon>TempSQLConnectionTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\AddNewTeachingAssistantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\AddNewTeachingAssistantForm.Designer.cs">
+      <DependentUpon>AddNewTeachingAssistantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\ChooseCoursesToTeach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\ChooseCoursesToTeach.Designer.cs">
+      <DependentUpon>ChooseCoursesToTeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\ChooseDaysToTeach_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\ChooseDaysToTeach_Form.Designer.cs">
+      <DependentUpon>ChooseDaysToTeach_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\ChooseHoursToTeach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\ChooseHoursToTeach.Designer.cs">
+      <DependentUpon>ChooseHoursToTeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\MinTimeBetweenClasses_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\MinTimeBetweenClasses_Form.Designer.cs" />
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\NewMinTimeBetweenClasses_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\NewMinTimeBetweenClasses_Form.Designer.cs">
+      <DependentUpon>NewMinTimeBetweenClasses_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\NumOfDays_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\NumOfDays_Form.Designer.cs">
+      <DependentUpon>NumOfDays_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\OfficeHours_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\OfficeHours_Form.Designer.cs">
+      <DependentUpon>OfficeHours_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\SearchLecturer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\SearchLecturer_Form.Designer.cs">
+      <DependentUpon>SearchLecturer_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\SearchTeachingAssistant_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\SearchTeachingAssistant_Form.Designer.cs">
+      <DependentUpon>SearchTeachingAssistant_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\SemestersToTeach_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\SemestersToTeach_Form.Designer.cs">
+      <DependentUpon>SemestersToTeach_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAsForms\TeachingAssistantSQL.cs" />
+    <Compile Include="TeachingAssistantFolder\TeachingAssistant.cs" />
+    <Compile Include="TeachingAssistantFolder\TeachingAssist_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachingAssistantFolder\TeachingAssist_Form.Designer.cs">
+      <DependentUpon>TeachingAssist_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TempMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TempMainForm.Designer.cs">
+      <DependentUpon>TempMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BasicUser Folder\BasicUser_Form.resx">
+      <DependentUpon>BasicUser_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicUser Folder\BasicUser_Registration_Form.resx">
+      <DependentUpon>BasicUser_Registration_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\AddCourse_Form.resx">
+      <DependentUpon>AddCourse_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\AddWorker_Form.resx">
+      <DependentUpon>AddWorker_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\DeleteCourse_Form.resx">
+      <DependentUpon>DeleteCourse_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\DeleteWorker_Form.resx">
+      <DependentUpon>DeleteWorker_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\DerecognitionOfHours_Form.resx">
+      <DependentUpon>DerecognitionOfHours_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\EditCourseDetail_Form.resx">
+      <DependentUpon>EditCourseDetail_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\EditCourse_Form.resx">
+      <DependentUpon>EditCourse_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\ExeptionOfHours_Form.resx">
+      <DependentUpon>ExeptionOfHours_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\HeadOfDepartment_Form.resx">
+      <DependentUpon>HeadOfDepartment_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\PeopleWithAbnormalHours_Form.resx">
+      <DependentUpon>PeopleWithAbnormalHours_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\PrintAllCourses.resx">
+      <DependentUpon>PrintAllCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\PrintAllLecturer.resx">
+      <DependentUpon>PrintAllLecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeadOfDepartmentFolder\PrintAllTeachingAssists.resx">
+      <DependentUpon>PrintAllTeachingAssists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerFolder\ChangeOfficeHours.resx">
+      <DependentUpon>ChangeOfficeHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerFolder\ChooseHoursToWork_Form.resx">
+      <DependentUpon>ChooseHoursToWork_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerFolder\ChooseOfficeHours.resx">
+      <DependentUpon>ChooseOfficeHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerFolder\Lecturer_Form.resx">
+      <DependentUpon>Lecturer_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerFolder\NumOfDays_Form.resx">
+      <DependentUpon>NumOfDays_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerFolder\SemestersToTeachLecturer_Form.resx">
+      <DependentUpon>SemestersToTeachLecturer_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFolder\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SecretaryFolder\Assign_Form.resx">
+      <DependentUpon>Assign_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecretaryFolder\DerecognitionHours_Form.resx">
+      <DependentUpon>DerecognitionHours_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecretaryFolder\ExceptionHours_Form.resx">
+      <DependentUpon>ExceptionHours_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecretaryFolder\OpenOrCloseCourse_Form.resx">
+      <DependentUpon>OpenOrCloseCourse_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecretaryFolder\PrintCourseDetails_Form.resx">
+      <DependentUpon>PrintCourseDetails_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecretaryFolder\PrintSchedule_Form.resx">
+      <DependentUpon>PrintSchedule_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecretaryFolder\Secretary_Form.resx">
+      <DependentUpon>Secretary_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLDataBase\TempSQLConnectionTestForm.resx">
+      <DependentUpon>TempSQLConnectionTestForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\ChooseCoursesToTeach.resx">
+      <DependentUpon>ChooseCoursesToTeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\ChooseDaysToTeach_Form.resx">
+      <DependentUpon>ChooseDaysToTeach_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\ChooseHoursToTeach.resx">
+      <DependentUpon>ChooseHoursToTeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\MinTimeBetweenClasses_Form.resx" />
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\NewMinTimeBetweenClasses_Form.resx">
+      <DependentUpon>NewMinTimeBetweenClasses_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\NumOfDays_Form.resx">
+      <DependentUpon>NumOfDays_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\OfficeHours_Form.resx">
+      <DependentUpon>OfficeHours_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\SearchLecturer_Form.resx">
+      <DependentUpon>SearchLecturer_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\SearchTeachingAssistant_Form.resx">
+      <DependentUpon>SearchTeachingAssistant_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAsForms\SemestersToTeach_Form.resx">
+      <DependentUpon>SemestersToTeach_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachingAssistantFolder\TeachingAssist_Form.resx">
+      <DependentUpon>TeachingAssist_Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TempMainForm.resx">
+      <DependentUpon>TempMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="ProjectDataBaseDataSet.xsc">
+      <DependentUpon>ProjectDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectDataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectDataBaseDataSet.xss">
+      <DependentUpon>ProjectDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
