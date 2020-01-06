@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 22</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 34</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Head of department Preferences:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="createClass_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 102</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="createClass_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="createClass_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 74</value>
+  </data>
+  <data name="createClass_button.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="createClass_button.Text" xml:space="preserve">
+    <value>Create Course</value>
+  </data>
+  <data name="&gt;&gt;createClass_button.Name" xml:space="preserve">
+    <value>createClass_button</value>
+  </data>
+  <data name="&gt;&gt;createClass_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createClass_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;createClass_button.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="deleteClass_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 102</value>
+  </data>
+  <data name="deleteClass_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="deleteClass_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 74</value>
+  </data>
+  <data name="deleteClass_button.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="deleteClass_button.Text" xml:space="preserve">
+    <value>Delete Course</value>
+  </data>
+  <data name="&gt;&gt;deleteClass_button.Name" xml:space="preserve">
+    <value>deleteClass_button</value>
+  </data>
+  <data name="&gt;&gt;deleteClass_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteClass_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;deleteClass_button.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="addWorker_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 202</value>
+  </data>
+  <data name="addWorker_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="addWorker_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 74</value>
+  </data>
+  <data name="addWorker_button.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="addWorker_button.Text" xml:space="preserve">
+    <value>Add Worker</value>
+  </data>
+  <data name="&gt;&gt;addWorker_button.Name" xml:space="preserve">
+    <value>addWorker_button</value>
+  </data>
+  <data name="&gt;&gt;addWorker_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addWorker_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addWorker_button.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="deleteWorker_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 202</value>
+  </data>
+  <data name="deleteWorker_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="deleteWorker_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 74</value>
+  </data>
+  <data name="deleteWorker_button.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="deleteWorker_button.Text" xml:space="preserve">
+    <value>Delete Worker</value>
+  </data>
+  <data name="&gt;&gt;deleteWorker_button.Name" xml:space="preserve">
+    <value>deleteWorker_button</value>
+  </data>
+  <data name="&gt;&gt;deleteWorker_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteWorker_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;deleteWorker_button.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="editLecturer_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 312</value>
+  </data>
+  <data name="editLecturer_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="editLecturer_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 88</value>
+  </data>
+  <data name="editLecturer_button.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="editLecturer_button.Text" xml:space="preserve">
+    <value>Edit Lecturer</value>
+  </data>
+  <data name="&gt;&gt;editLecturer_button.Name" xml:space="preserve">
+    <value>editLecturer_button</value>
+  </data>
+  <data name="&gt;&gt;editLecturer_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editLecturer_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;editLecturer_button.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="editTeachingAssistant_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 312</value>
+  </data>
+  <data name="editTeachingAssistant_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="editTeachingAssistant_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 88</value>
+  </data>
+  <data name="editTeachingAssistant_button.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="editTeachingAssistant_button.Text" xml:space="preserve">
+    <value>Edit Teaching Assistant</value>
+  </data>
+  <data name="&gt;&gt;editTeachingAssistant_button.Name" xml:space="preserve">
+    <value>editTeachingAssistant_button</value>
+  </data>
+  <data name="&gt;&gt;editTeachingAssistant_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editTeachingAssistant_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;editTeachingAssistant_button.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="PrintTeachingAssistants_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 425</value>
+  </data>
+  <data name="PrintTeachingAssistants_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="PrintTeachingAssistants_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 74</value>
+  </data>
+  <data name="PrintTeachingAssistants_button.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="PrintTeachingAssistants_button.Text" xml:space="preserve">
+    <value>Print Teaching Assistants</value>
+  </data>
+  <data name="&gt;&gt;PrintTeachingAssistants_button.Name" xml:space="preserve">
+    <value>PrintTeachingAssistants_button</value>
+  </data>
+  <data name="&gt;&gt;PrintTeachingAssistants_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrintTeachingAssistants_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PrintTeachingAssistants_button.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="PrintClasses_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>564, 425</value>
+  </data>
+  <data name="PrintClasses_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="PrintClasses_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 74</value>
+  </data>
+  <data name="PrintClasses_button.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="PrintClasses_button.Text" xml:space="preserve">
+    <value>Print Courses</value>
+  </data>
+  <data name="&gt;&gt;PrintClasses_button.Name" xml:space="preserve">
+    <value>PrintClasses_button</value>
+  </data>
+  <data name="&gt;&gt;PrintClasses_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrintClasses_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PrintClasses_button.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PrintLecturers_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 425</value>
+  </data>
+  <data name="PrintLecturers_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="PrintLecturers_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 74</value>
+  </data>
+  <data name="PrintLecturers_button.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="PrintLecturers_button.Text" xml:space="preserve">
+    <value>Print Lecturers</value>
+  </data>
+  <data name="&gt;&gt;PrintLecturers_button.Name" xml:space="preserve">
+    <value>PrintLecturers_button</value>
+  </data>
+  <data name="&gt;&gt;PrintLecturers_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrintLecturers_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PrintLecturers_button.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="EditClass_button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EditClass_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>564, 312</value>
+  </data>
+  <data name="EditClass_button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="EditClass_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 88</value>
+  </data>
+  <data name="EditClass_button.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="EditClass_button.Text" xml:space="preserve">
+    <value>Edit Course</value>
+  </data>
+  <data name="&gt;&gt;EditClass_button.Name" xml:space="preserve">
+    <value>EditClass_button</value>
+  </data>
+  <data name="&gt;&gt;EditClass_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EditClass_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;EditClass_button.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="exceptionHoursButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 202</value>
+  </data>
+  <data name="exceptionHoursButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="exceptionHoursButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 71</value>
+  </data>
+  <data name="exceptionHoursButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="exceptionHoursButton.Text" xml:space="preserve">
+    <value>Abort derecognition of hours</value>
+  </data>
+  <data name="&gt;&gt;exceptionHoursButton.Name" xml:space="preserve">
+    <value>exceptionHoursButton</value>
+  </data>
+  <data name="&gt;&gt;exceptionHoursButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exceptionHoursButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;exceptionHoursButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="derecognitionHoursButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 102</value>
+  </data>
+  <data name="derecognitionHoursButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="derecognitionHoursButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 74</value>
+  </data>
+  <data name="derecognitionHoursButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="derecognitionHoursButton.Text" xml:space="preserve">
+    <value>Derecognition of hours</value>
+  </data>
+  <data name="&gt;&gt;derecognitionHoursButton.Name" xml:space="preserve">
+    <value>derecognitionHoursButton</value>
+  </data>
+  <data name="&gt;&gt;derecognitionHoursButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;derecognitionHoursButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;derecognitionHoursButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="InlayTeachingAssistantButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 105</value>
+  </data>
+  <data name="InlayTeachingAssistantButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="InlayTeachingAssistantButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 71</value>
+  </data>
+  <data name="InlayTeachingAssistantButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="InlayTeachingAssistantButton.Text" xml:space="preserve">
+    <value>Approval of Unusual Hours</value>
+  </data>
+  <data name="&gt;&gt;InlayTeachingAssistantButton.Name" xml:space="preserve">
+    <value>InlayTeachingAssistantButton</value>
+  </data>
+  <data name="&gt;&gt;InlayTeachingAssistantButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InlayTeachingAssistantButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;InlayTeachingAssistantButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="InlayLecturerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 200</value>
+  </data>
+  <data name="InlayLecturerButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="InlayLecturerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 69</value>
+  </data>
+  <data name="InlayLecturerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="InlayLecturerButton.Text" xml:space="preserve">
+    <value>Cancellation of Unusual Hours</value>
+  </data>
+  <data name="&gt;&gt;InlayLecturerButton.Name" xml:space="preserve">
+    <value>InlayLecturerButton</value>
+  </data>
+  <data name="&gt;&gt;InlayLecturerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InlayLecturerButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;InlayLecturerButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>789, 526</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>HeadOfDepartmentForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>HeadOfDepartment_Form</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
